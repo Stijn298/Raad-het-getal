@@ -17,10 +17,10 @@ public class Main {
 
         int i = 0;
         while (i < 10) {
-            System.out.println("Enter a number 1-10");
+            System.out.println("Enter a number 0-10");
             int userinput = GetInput.nextInt();
             if (userinput < 0 || userinput > 10) {
-                System.out.println("Please enter a number 1-10!");
+                System.out.println("Not a valid number!");
                 i--;
             } else if (userinput == randomNum) {
                 System.out.println("Congratulations, you guessed the correct number!");
