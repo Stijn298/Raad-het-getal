@@ -13,13 +13,13 @@ public class Main {
     }
     static void guess() {
         Scanner GetInput = new Scanner(System.in);
-        int randomNum = (int) (Math.random() * 11);
+        int randomNum = (int) (Math.random() * 1000);
 
         int i = 0;
         while (i < 10) {
-            System.out.println("Enter a number 0-10");
+            System.out.println("Enter a number 0-1000");
             int userinput = GetInput.nextInt();
-            if (userinput < 0 || userinput > 10) {
+            if (userinput < 0 || userinput > 1000) {
                 System.out.println("Not a valid number!");
                 i--;
             } else if (userinput == randomNum) {
